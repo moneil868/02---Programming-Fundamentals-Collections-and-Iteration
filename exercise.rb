@@ -3,7 +3,7 @@
 my_fav_colours = ["red", "blue", "green", "yellow"]
 
 #the age of you and your siblings/cousins/friends
-
+age_array = [30, 21, 30, 40]
 
 #flip a coin 5 times and record whether or not the result was 'heads'
 
