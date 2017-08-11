@@ -42,4 +42,35 @@ puts "The three_fav_bands array gave the following results #{three_fav_bands.joi
 
 my_fav_colours = [:red, :blue, :green, :yellow]
 puts
-puts "The my_fav_colours array gave the following results #{my_fav_colours.join(', ')}" 
+puts "The my_fav_colours array gave the following results #{my_fav_colours.join(', ')}"
+
+
+#Create a hash for each item below that contains the given information:
+#three words and their definitions
+three_words = {
+    :saccade => "the series of small, jerky movements of the eyes when changing focus from one point to another",
+    :indignant => "feeling, characterized by, or expressing strong displeasure at something considered unjust",
+    :intrepid => "resolutely fearless"
+  }
+
+#your favourite movie names and their year of creation
+movies = {
+    :independence_day => 1996,
+    :irobot => 2004,
+    :matrix => 1999
+  }
+
+#three cities of the world and their population
+cities = {
+    :toronto => 2800000,
+    :new_york => 8538000,
+    :philadelphia => 1586000
+  }
+
+#the names of your siblings/cousins/friends and their ages
+siblings = {
+    :michael => 32,
+    :kiri => 24,
+    :daveon => 33,
+    :jamie_lee => 15
+  }
