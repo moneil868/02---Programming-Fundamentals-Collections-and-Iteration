@@ -42,4 +42,4 @@ puts "The three_fav_bands array gave the following results #{three_fav_bands.joi
 
 my_fav_colours = [:red, :blue, :green, :yellow]
 puts
-puts "The my_fav_colours array gave the following results #{my_fav_colours.join(', ')}"
+puts "The my_fav_colours array gave the following results #{my_fav_colours.join(', ')}" 
