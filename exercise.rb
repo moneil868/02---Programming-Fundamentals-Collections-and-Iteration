@@ -6,8 +6,6 @@ puts "The my_fav_colours array gave the following results #{my_fav_colours.join(
 
 #the age of you and your siblings/cousins/friends
 age_array = [30, 21, 30, 40]
-puts
-puts "The age_array gave the following results #{age_array.join(', ')}"
 
 #flip a coin 5 times and record whether or not the result was 'heads'
 
@@ -28,9 +26,6 @@ def flip(coin)
   result = flip(coin)
   coin_flip << result
 end
-
-puts
-puts "The coin_flip array gave the following results #{coin_flip.join(', ')}"
 
 #your three favourite performing artists
 
@@ -74,3 +69,21 @@ siblings = {
     :daveon => 33,
     :jamie_lee => 15
   }
+
+  #Exercise 1
+  #Print out the array of coin flips.
+  puts
+  puts "The coin_flip array gave the following results #{coin_flip.join(', ')}"
+
+  #Print out the first element of the array of your favourite colours.
+  puts "The first element in the my_fav_colours array is #{my_fav_colours.first}"
+
+  #Output the sorted version of the array of your friends and family members' ages.
+  puts
+  puts "A sorted list of the age_array is '#{age_array.sort}'"
+
+  #Add a new baby (0 years old) to the array of your family's ages.
+  age_array << 0
+
+  #Using the hash of movie information, access and print the year of one of the movies.
+  puts "The movie Independence Day was released in #{movies.fetch(:independence_day)}"
