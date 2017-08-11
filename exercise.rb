@@ -268,6 +268,9 @@ end
 puts "The sum of the numbers = #{numbers_between_1_and_50_total}"
 
 #Create a new array which has three of each number up to 50.
+
+  #Ie. [1, 1, 1, 2, 2, 2, 3, 3, 3, ... , 50, 50, 50] and so on, up to 50.
+
 new_array_up_to_50 = []
 count = 0
 
@@ -292,3 +295,33 @@ puts three_country_array
 puts #to place result on new line
 puts "These countries are islands:"
 puts countries_array_from_three_country_array
+
+
+# ======== Exercise 7 ========
+#You want to add up your expenses for the year. Create an array of numbers (integers or floats) that represents your expenses, eg: [250, 7.95, 30.95, 16.50]
+
+expenses_array = [10.0, 20, 100, 33.45, 7.99]
+
+#Add up the numbers and output the result.
+total_expenses = 0
+expenses_array.each do |item|
+  total_expenses = total_expenses + item
+end
+
+puts "The total expenses were #{total_expenses}"
+
+#Put this code into a method. The method should take an array as an argument and return the sum of the expenses in the array. Call the method twice with different arrays.
+
+new_expenses_array = [4.50, 230, 2.10, 40, 7.99, 0.99, 20.90]
+
+
+def calculate_total(target_array)
+  total_expenses = 0
+  target_array.each do |item|
+    total_expenses = total_expenses + item
+  end
+  return total_expenses
+end
+
+puts "The method is being run against 'new_expenses_array', the result is $#{calculate_total(new_expenses_array)}"
+puts  "The method is being run against 'expenses_array', the result is $#{calculate_total(expenses_array)}"
