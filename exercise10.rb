@@ -17,7 +17,6 @@ numbers.each do |number|
 end
 
 
-
 #  ========== Exercise 11 ==========
 #PizzaMaker wants to handle bulk orders of pizzas, with varying amounts of toppings on each.
 #Ask the user for a number of pizzas - call it quantity.
