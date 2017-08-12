@@ -15,3 +15,20 @@ numbers.each do |number|
       puts number
   end
 end
+
+
+
+#  ========== Exercise 11 ==========
+#PizzaMaker wants to handle bulk orders of pizzas, with varying amounts of toppings on each.
+#Ask the user for a number of pizzas - call it quantity.
+print "How many pizzas do you want? "
+quantity = gets.to_i
+count = 1
+#We then want to ask the user for quantity more numbers -
+quantity.times do
+  #the number of toppings on that pizza -
+  print "How many toppings for pizza #{count}? "
+  amount_of_toppings = gets.chomp
+  count = count + 1
+  puts "You have ordered a pizza with #{amount_of_toppings} toppings"
+end
