@@ -325,3 +325,29 @@ end
 
 puts "The method is being run against 'new_expenses_array', the result is $#{calculate_total(new_expenses_array)}"
 puts  "The method is being run against 'expenses_array', the result is $#{calculate_total(expenses_array)}"
+
+# ======== Exercise 8 ========
+grocery_list = ["carrots", "toilet paper", "apples", "salmon", "chip", "twix", "bread", "ice-cream"]
+
+grocery_list.each do |grocery_items|
+  puts "* " + grocery_items
+end
+
+
+#You realize you've forgotten some rice, so add it to your list and output it again. Given that you've already output your list twice, it might be good to consider writing a method to do this. Putting frequently used chunks of code in a method lets you reuse them throughout your program without having to type them out over and over.
+grocery_list << "rice"
+puts grocery_list
+
+#You lost count of how many things you need to pick up. Better output the total number of items on your list.
+puts grocery_list.length
+
+#Check to see if your list includes "bananas". If it does, output "You need to pick up bananas". Otherwise, output "You don't need to pick up bananas today".
+
+
+#Display the second item in the list. (Don't forget that arrays indices start at zero!)
+
+
+#It turns out that everything in this grocery store you're visiting is stored alphabetically, so to better plan out what you need to buy you should sort your grocery list and output it with asterisks again.
+
+
+#After looking everywhere, you can't find the salmon. Delete it from your list and redisplay the list one last time.
