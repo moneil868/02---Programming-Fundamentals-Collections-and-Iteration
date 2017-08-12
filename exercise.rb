@@ -334,20 +334,43 @@ grocery_list.each do |grocery_items|
 end
 
 
-#You realize you've forgotten some rice, so add it to your list and output it again. Given that you've already output your list twice, it might be good to consider writing a method to do this. Putting frequently used chunks of code in a method lets you reuse them throughout your program without having to type them out over and over.
+#You realize you've forgotten some rice, so add it to your list
 grocery_list << "rice"
-puts grocery_list
+
+# Given that you've already output your list twice, it might be good to consider writing a method to do this. Putting frequently used chunks of code in a method lets you reuse them throughout your program without having to type them out over and over.
+puts #to place result on new line
+def output_grocery(searched_array)
+  searched_array.each do |grocery_items|
+    puts "* " + grocery_items
+  end
+end
+
+#and output it again.
+puts #to place result on new line
+output_grocery(grocery_list)
 
 #You lost count of how many things you need to pick up. Better output the total number of items on your list.
+puts #to place result on new line
 puts grocery_list.length
 
 #Check to see if your list includes "bananas". If it does, output "You need to pick up bananas". Otherwise, output "You don't need to pick up bananas today".
-
+puts #to place result on new line
+if grocery_list.include?("bananas")
+  puts "You need to pick up bananas"
+else
+  puts "You don't need to pick up bananas today"
+end
 
 #Display the second item in the list. (Don't forget that arrays indices start at zero!)
-
+puts #to place result on new line
+puts "The second items on the grocery list is '#{grocery_list[1]}'."
 
 #It turns out that everything in this grocery store you're visiting is stored alphabetically, so to better plan out what you need to buy you should sort your grocery list and output it with asterisks again.
-
+puts #to place result on new line
+grocery_list = grocery_list.sort
+output_grocery(grocery_list)
 
 #After looking everywhere, you can't find the salmon. Delete it from your list and redisplay the list one last time.
+grocery_list.delete("salmon")
+puts #to place result on new line
+output_grocery(grocery_list)
